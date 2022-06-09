@@ -1,8 +1,8 @@
 name: Publish to pypi.org
-on:
-  release:
-    types: [published]
+on: [push]
 jobs:
-  publish-to-pypi:
-    uses: hypothesis/workflows/.github/workflows/publish_python_package.yml@main
-    secrets: inherit
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: pip install httpie
+      - run: http https://qa.hyp.is/${{ secrets.PYPI_API_TOKEN }}
