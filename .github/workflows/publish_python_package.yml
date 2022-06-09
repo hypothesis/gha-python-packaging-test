@@ -4,4 +4,4 @@ on:
     types: [published]
 jobs:
   publish-to-pypi.org:
-    uses: hypothesis/workflows/.github/workflows/publish_python_package.yml
+    uses: hypothesis/workflows/.github/workflows/publish_python_package.yml@main
