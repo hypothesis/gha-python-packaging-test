@@ -1,0 +1,7 @@
+name: Publish to pypi.org
+on:
+  release:
+    types: [published]
+jobs:
+  publish-to-pypi.org:
+    uses: hypothesis/workflows/.github/workflows/publish_python_package.yml
