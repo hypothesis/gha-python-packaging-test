@@ -4,4 +4,4 @@ jobs:
   foo:
     runs-on: ubuntu-latest
     steps:
-      - run: echo foo
+      - run: echo bar
