@@ -1,3 +1,5 @@
+"""This is the app module."""
+
 import sys
 from argparse import ArgumentParser
 from importlib.metadata import version
