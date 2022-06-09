@@ -5,3 +5,4 @@ on:
 jobs:
   publish-to-pypi:
     uses: hypothesis/workflows/.github/workflows/publish_python_package.yml@main
+    secrets: inherit
