@@ -29,7 +29,7 @@ Here's how it works:
    See [Managing releases in a repository](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)
    in GitHub's docs.
 
-3. This repo contains a [`pypi.yml`](.github/workflows/pypi.yml) that runs when
+3. This repo contains a [`pypi.yml`](.github/workflows/pypi.yml) workflow that runs when
    a new GitHub release is published and calls a
    [shared `pypi.yml` workflow in our `workflows` repo](https://github.com/hypothesis/workflows/blob/main/.github/workflows/pypi.yml)
    (see [Reusing workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows) in the GitHub Actions docs).
@@ -38,7 +38,7 @@ Here's how it works:
 
 4. In order for this to work the repo needs to have access to an
    organization-level GitHub secret named `PYPI_TOKEN`. If you're setting up a
-   new rep get someone with admin access to our GitHub organization to add your
+   new repo get someone with admin access to our GitHub organization to add your
    new repo to the secret's scopes.
    See [Adding secrets for an organization](https://docs.github.com/en/codespaces/managing-codespaces-for-your-organization/managing-encrypted-secrets-for-your-repository-and-organization-for-codespaces#adding-secrets-for-an-organization) in GitHub's docs.
 
